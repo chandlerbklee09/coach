@@ -147,26 +147,6 @@
     <h2 style="color: #b25d48;">문의하기</h2>
 
   <form action="https://formspree.io/f/xgvkkggv" method="POST">
-    <label>
-    Your email:
-    <input type="email" name="email">
-    </label>
-    <label>
-    Your message:
-    <textarea name="message"></textarea>
-    </label>
-    <!-- your other form fields go here -->
-    <button type="submit">Send</button>
-  </form> 
-    
-  <form action="https://formspree.io/f/xgvkkggv" method="POST">
-    <input type="text" name="name" required>
-    <input type="email" name="email" required>
-    <textarea name="message" required></textarea>
-    <button type="submit">보내기</button>
-  </form>
-
-  <form action="https://formspree.io/f/your_form_id" method="POST">
     <label for="name">이름</label>
     <input type="text" id="name" name="name" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:5px;">
 
@@ -179,6 +159,7 @@
     <button type="submit" style="margin-top: 20px; padding: 10px 20px; background-color: #b25d48; color: white; border: none; border-radius: 5px; font-size: 1em; cursor: pointer;">
       보내기
     </button>
+    <input type="hidden" name="_redirect" value="https://yourwebsite.com/thanks.html">
   </form>
     
   </div>  

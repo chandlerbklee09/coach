@@ -146,21 +146,42 @@
 
   <div class="section contact-form" style="background-color: #fdfaf7; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); margin-top: 40px;">
     <h2 style="color: #b25d48;">문의하기</h2>
-    <form
-  action="https://formspree.io/f/xgvkkggv"
-  method="POST"
->
-  <label>
+
+  <form action="https://formspree.io/f/xgvkkggv" method="POST">
+    <label>
     Your email:
     <input type="email" name="email">
-  </label>
-  <label>
+    </label>
+    <label>
     Your message:
     <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+    </label>
+    <!-- your other form fields go here -->
+    <button type="submit">Send</button>
   </form> 
+    
+  <form action="https://formspree.io/f/xgvkkggv" method="POST">
+    <input type="text" name="name" required>
+    <input type="email" name="email" required>
+    <textarea name="message" required></textarea>
+    <button type="submit">보내기</button>
+  </form>
+
+  <form action="https://formspree.io/f/your_form_id" method="POST">
+    <label for="name">이름</label>
+    <input type="text" id="name" name="name" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:5px;">
+
+    <label for="email" style="margin-top:10px; display:block;">이메일 주소</label>
+    <input type="email" id="email" name="email" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:5px;">
+
+    <label for="message" style="margin-top:10px; display:block;">문의 내용</label>
+    <textarea id="message" name="message" rows="5" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:5px;"></textarea>
+
+    <button type="submit" style="margin-top: 20px; padding: 10px 20px; background-color: #b25d48; color: white; border: none; border-radius: 5px; font-size: 1em; cursor: pointer;">
+      보내기
+    </button>
+  </form>
+    
   </div>  
 </body>
 </html>

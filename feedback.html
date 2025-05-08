@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>코칭 피드백</title>
+  <link rel="stylesheet" href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css">
+  <style>
+    body {
+      font-family: 'Spoqa Han Sans Neo', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+      line-height: 1.7;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #417857;
+      margin-bottom: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 25px;
+      padding: 12px 24px;
+      background-color: #417857;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>코칭 피드백</h2>
+  <p>코칭을 통해 느낀 점이나 변화, 제안하고 싶은 점이 있다면 자유롭게 남겨주세요.</p>
+
+  <form action="https://formspree.io/f/xgvkkggv" method="POST">
+    <label for="name">이름</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">이메일 주소 (선택)</label>
+    <input type="email" id="email" name="email">
+
+    <label for="feedback">피드백 내용</label>
+    <textarea id="feedback" name="message" rows="6" required></textarea>
+
+    <button type="submit">피드백 제출</button>
+  </form>
+
+</body>
+</html>
